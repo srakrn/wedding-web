@@ -21,3 +21,16 @@ export async function load({ params, url, route }) {
 
     return sqlResponse.data[0]
 }
+
+export const actions = {
+    default: async ({ cookies, request }) => {
+        const data = await request.formData();
+        const screenName = data.get('screen_name');
+        const n_guests = data.get('n_guests');
+        // db.createTodo(cookies.get('userid'), data.get('description'));
+        const supabase_response = await supabase
+            .from('registrations')
+            .insert({ by: screenName, n_guests: n_guests })
+        console.log(supabase_response)
+    }
+}
