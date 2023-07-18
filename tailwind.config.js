@@ -4,8 +4,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
-      "display": ["IBM Plex Sans Thai"],
-      "body": ["IBM Plex Sans Thai Looped"],
+      "sans": ['"IBM Plex Sans Thai Looped"'],
+      "display": ['"IBM Plex Sans Thai"'],
+      "body": ['"IBM Plex Sans Thai Looped"'],
     },
     extend: {},
   },
