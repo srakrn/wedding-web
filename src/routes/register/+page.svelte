@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<h1>Register</h1>
+<h1 class="font-display text-4xl tracking-wide">Register / ลงทะเบียน</h1>
 
 <p>Hi, {data.friendly_name}!</p>
 
