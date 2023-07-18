@@ -10,8 +10,22 @@ export default {
     extend: {},
   },
   daisyui: {
-    themes: ["garden"],
-    darkTheme: "garden",
+    themes: [
+      {
+        ft: {
+          "primary": "#27594b",
+          "secondary": "#659157",
+          "accent": "#e07400",
+          "neutral": "#281b16",
+          "base-100": "#f3f4f6",
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#f8cc18",
+          "error": "#f87272",
+        },
+      }
+    ],
+    darkTheme: "ft",
   },
 }
 
