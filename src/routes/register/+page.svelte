@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<div class="flex mb-10">
+<div class="flex mb-5">
 	<div
 		class="hero min-h-[50vh]"
 		style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);"
@@ -10,6 +10,8 @@
 		<div class="hero-overlay bg-primary bg-opacity-80" />
 		<div class="hero-content text-center text-base-100">
 			<div class="max-w-2xl">
+				<div class="max-w-lg" />
+				<img src="rs-text-white.svg" class="place-content-center" alt="Ratchadaporn & Sirakorn" />
 				<h1 class="mb-5 text-3xl font-bold">Witness our commitment.</h1>
 				<p class="mb-5">
 					Ratchadaporn Pimrat (Fang) and Sirakorn Lamyai (Tan) would like to cordially invite you to
@@ -25,10 +27,10 @@
 	</div>
 </div>
 
-<div class="flex justify-center">
+<div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
 		<h1 class="font-display text-2xl tracking-wide my-5">Information / ข้อมูลงาน</h1>
-		<ul class="list-disc my-5">
+		<ul class="list-disc my-5 ml-5">
 			<li>
 				Date: To be decided. We look forward to hearing your schedule, so that we can accomodate
 				you.
@@ -39,7 +41,7 @@
 			</li>
 			<li>Suggested dress code: earth tone</li>
 		</ul>
-		<ul class="list-disc my-5">
+		<ul class="list-disc my-5 ml-5">
 			<li>
 				วันที่: เรายังไม่ได้ตัดสินใจวันที่ และอยากจะได้ยินจากทุกคนถึงวันที่ที่จะสะดวกมางานที่สุด
 			</li>
