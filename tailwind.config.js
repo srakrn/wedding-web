@@ -1,6 +1,6 @@
 /** @type {import("tailwindcss").Config} */
 export default {
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/forms"), require("daisyui")],
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
