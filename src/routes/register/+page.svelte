@@ -17,5 +17,5 @@
 		>How many guests?
 		<input name="n_guests" />
 	</label>
-	<input type="submit" />
+	<input type="submit" value="Register!" class="btn btn-primary" />
 </form>
