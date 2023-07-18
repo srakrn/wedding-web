@@ -2,15 +2,15 @@
 	export let data;
 </script>
 
-<div class="flex mb-10">
+<div class="flex mb-20">
 	<div
 		class="hero min-h-[50vh]"
 		style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);"
 	>
-		<div class="hero-overlay bg-opacity-60" />
+		<div class="hero-overlay bg-opacity-80" />
 		<div class="hero-content text-center text-neutral-content">
-			<div class="max-w-xl">
-				<h1 class="mb-5 text-5xl font-bold">You are invited!</h1>
+			<div class="max-w-2xl">
+				<h1 class="mb-5 text-3xl font-bold">Witness our commitment.</h1>
 				<p class="mb-5">
 					Ratchadaporn Pimrat and Sirakorn Lamyai would like to cordially invite you to our wedding
 					party, which will happen on <span class="font-bold">YYYY-MM-DD</span>
