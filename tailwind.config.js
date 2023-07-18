@@ -1,9 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
+    fontFamily: {
+      "display": ["IBM Plex Sans Thai"],
+      "body": ["IBM Plex Sans Thai Looped"],
+    },
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["garden"],
+    darkTheme: "garden",
+  },
 }
 
