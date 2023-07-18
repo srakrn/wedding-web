@@ -6,7 +6,6 @@ export default {
     fontFamily: {
       "sans": ['"IBM Plex Sans Thai Looped"'],
       "display": ['"IBM Plex Sans Thai"'],
-      "body": ['"IBM Plex Sans Thai Looped"'],
     },
     extend: {},
   },
