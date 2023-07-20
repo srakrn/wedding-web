@@ -2,22 +2,16 @@
 	export let data;
 </script>
 
-<div class="flex mb-5">
-	<div
-		class="hero min-h-[50vh]"
-		style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);"
-	>
-		<div class="hero-overlay bg-primary bg-opacity-80" />
-		<div class="hero-content text-center text-base-100">
-			<div class="max-w-2xl">
-				<div class="max-w-lg" />
-				<img src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
-				<h1 class="mb-5 text-3xl">Witness our commitment.</h1>
-			</div>
+<div class="hero min-h-[50vh] mb-10" style="background-image: url(rs-bg.jpg);">
+	<div class="hero-overlay bg-primary bg-opacity-80" />
+	<div class="hero-content flex-col text-center text-base-100 w-full">
+		<img class="max-w-lg" src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
+		<div class="max-w-2xl">
+			<h1 class="mb-3 text-3xl">Witness out commitment</h1>
+			<h1 class="mb-5 text-xl">Tentatively 10 December 2023</h1>
 		</div>
 	</div>
 </div>
-
 <div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
 		<p class="mb-3">
@@ -34,7 +28,7 @@
 		</p>
 		<h1 class="font-display text-2xl tracking-wide my-5">Information / ข้อมูลงาน</h1>
 		<ul class="list-disc my-5 ml-5">
-			<li>Date: Tentatively 10 December 2023, 18:00</li>
+			<li>Date: Tentatively 10 December 2023 Evening</li>
 			<li>
 				Venue: Will be in Bangkok/Nonthaburi. We will try our best to find venue close to public
 				transportation options.
@@ -43,7 +37,7 @@
 			<li>Note: this will be a very casual party, without any formal/serious ceremonies.</li>
 		</ul>
 		<ul class="list-disc my-5 ml-5">
-			<li>วันที่: คาดว่า 10 ธันวาคม 2566, 18:00</li>
+			<li>วันที่: คาดว่า 10 ธันวาคม 2566 ช่วงเย็น</li>
 			<li>สถานที่: ในกรุงเทพหรือนนทบุรี เราจะพยายามหาสถานที่ที่เดินทางด้วยขนส่งมวลชนสะดวก</li>
 			<li>โทนสีเครื่องแต่งกายที่แนะนำ: เอิร์ธโทน</li>
 			<li>หมายเหตุ: ไม่มีงานพิธีจริงจัง เป็นงานปาร์ตี้และรับประทานอาหาร</li>
@@ -51,14 +45,13 @@
 		<h1 class="font-display text-2xl tracking-wide my-5">Join us in our celebration</h1>
 		<p class="mb-3">
 			We thrive to accomodate everyone joining to our best effort, and be green to our planet (by
-			reducing food and other materials waste). Therefore, we would like to hear from you. While we
-			may not be able to accomodate all requests, we will try our best.
+			reducing food and other materials waste). While we may not be able to accomodate all requests,
+			we will try our best.
 		</p>
 		<p class="mb-3">
 			เรามีความตั้งใจจะดูแลทุกคนที่มางานของเราให้ดีที่สุด
-			พร้อมกับช่วยรักษ์โลกด้วยการลดปริมาณอาหารและวัสดุสิ้นเปลือง เราอยากจะได้ยินเกี่ยวกับข้อมูลต่างๆ
-			สำหรับการมาร่วมงานของเรา, เราอาจจะไม่สามารถจัดทุกอย่างได้ตามรายละเอียดที่ระบุมา
-			แต่จะพยายามเต็มที่ค่ะ-ครับ
+			พร้อมกับช่วยรักษ์โลกด้วยการลดปริมาณอาหารและวัสดุสิ้นเปลือง
+			เราอาจจะไม่สามารถจัดทุกอย่างได้ตามรายละเอียดที่ระบุมา แต่จะพยายามเต็มที่ค่ะ-ครับ
 		</p>
 		<div class="card bg-base-200 shadow-xl">
 			<div class="card-body">
