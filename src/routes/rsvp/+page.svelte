@@ -3,6 +3,10 @@
 	export let form;
 </script>
 
+<svelte:head>
+	<title>Fang & Tan wedding: You are Invited!</title>
+</svelte:head>
+
 <div class="hero min-h-[50vh] mb-5" style="background-image: url(rs-bg.jpg);">
 	<div class="hero-overlay bg-primary bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full">
@@ -95,7 +99,7 @@
 			</div>
 		{/if}
 
-		<div class="card bg-base-200 shadow-xl">
+		<div class="card bg-base-200 shadow-xl mb-10">
 			<div class="card-body">
 				<form method="post">
 					<div class="form-control mb-10">
