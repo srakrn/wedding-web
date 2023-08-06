@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, fail } from '@sveltejs/kit';
 import { supabase } from '$lib/supabaseClient';
 
 export async function load({ params, url, route }) {
@@ -26,11 +26,20 @@ export const actions = {
     default: async ({ cookies, request }) => {
         const data = await request.formData();
         const screenName = data.get('screen_name');
-        const n_guests = data.get('n_guests');
-        // db.createTodo(cookies.get('userid'), data.get('description'));
-        const supabase_response = await supabase
-            .from('registrations')
-            .insert({ by: screenName, n_guests: n_guests })
-        console.log(supabase_response)
+        let error = [];
+
+        if (error.length) {
+            return fail(422, {
+                n_guests: data.get('n_guests'),
+                dietary: data.get('dietary'),
+                error: error
+            });
+        }
+        else {
+            const supabase_response = await supabase
+                .from('registrations')
+                .insert({ by: screenName, rsvp: data.get('rsvp'), restrictions: data.get('restrictions') })
+            console.log(supabase_response);
+        }
     }
 }
