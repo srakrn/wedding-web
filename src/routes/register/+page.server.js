@@ -6,32 +6,42 @@ export async function load({ params, url, route }) {
     const invitationCode = url.searchParams.get('invitation_code');
 
     if (!screenName || !invitationCode) {
-        throw error(403);
+        throw error(404);
     }
 
-    const sqlResponse = await supabase.from("guests").select().eq('screen_name', screenName).eq('invitation_code', invitationCode)
+    const guestInfoSqlResponse = await supabase.from("guests").select().eq('screen_name', screenName).eq('invitation_code', invitationCode)
+    const guestRegistSqlResponse = await supabase.from("registrations").select().eq('by', screenName).order('created_at', { ascending: false }).limit(1)
 
-    if (sqlResponse.error) {
+    if (guestInfoSqlResponse.error || guestRegistSqlResponse.error) {
+        console.log(guestInfoSqlResponse.error);
+        console.log(guestRegistSqlResponse.error);
         throw error(500);
     }
 
-    if (sqlResponse.data.length == 0) {
-        throw error(403);
+    if (guestInfoSqlResponse.data.length == 0) {
+        throw error(404);
     }
 
-    return sqlResponse.data[0]
+    const guest = guestInfoSqlResponse.data[0]
+    const guestRsvp = guestRegistSqlResponse.data[0]
+
+    return {
+        screen_name: guest.screen_name,
+        friendly_name: guest.friendly_name,
+        invitation_code: guest.invitation_code,
+        rsvp: guestRsvp?.rsvp,
+        restrictions: guestRsvp?.restrictions
+    }
 }
 
 export const actions = {
-    default: async ({ cookies, request }) => {
+    default: async ({ request }) => {
         const data = await request.formData();
         const screenName = data.get('screen_name');
         let error = [];
 
         if (error.length) {
             return fail(422, {
-                n_guests: data.get('n_guests'),
-                dietary: data.get('dietary'),
                 error: error
             });
         }
@@ -41,5 +51,6 @@ export const actions = {
                 .insert({ by: screenName, rsvp: data.get('rsvp'), restrictions: data.get('restrictions') })
             console.log(supabase_response);
         }
+        return { success: true }
     }
 }

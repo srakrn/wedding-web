@@ -15,14 +15,16 @@
 </div>
 <div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
-		<div class="alert alert-success mb-5">
-			<span>
-				We have received your RSVP! If you need to amend the information, please feel free to
-				re-submit, thank you!<br />
-				เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
-			</span>
-		</div>
-		<p class="my-5 text-lg">
+		{#if form?.success}
+			<div class="alert alert-success mb-3">
+				<span>
+					We have received your RSVP! If you need to amend the information, please feel free to
+					re-submit, thank you!<br />
+					เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
+				</span>
+			</div>
+		{/if}
+		<p class="mt-5 mb-3 text-xl">
 			Hi-สวัสดีค่ะ-ครับ, <span class="font-bold">{data.friendly_name}</span>!
 		</p>
 		<p class="mb-3">
@@ -43,7 +45,7 @@
 					class="link">(Google Maps)</a
 				>
 			</li>
-			<li>Suggested dress code: Pastel and floral (casual)</li>
+			<li>Event's theme and suggested dress code: Floral, pastel (casual)</li>
 		</ul>
 		<ul class="list-disc my-5 ml-5">
 			<li>วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 (ช่วงงานฉลองบนเวทีเริ่มต้น 18:30)</li>
@@ -53,7 +55,7 @@
 					class="link">(Google Maps)</a
 				>
 			</li>
-			<li>เดรสโค้ดที่แนะนำ: พาสเทลและดอกไม้ (ชุดลำลอง: casual)</li>
+			<li>ธีมงาน และโทนสีที่แนะนำ: ดอกไม้และพาสเทล (ชุดลำลอง: casual)</li>
 		</ul>
 		<div class="alert">
 			<svg
@@ -109,8 +111,15 @@
 							<div class="grid grid-cols-2 gap-4">
 								<div>
 									<label class="label cursor-pointer justify-start">
-										<input type="radio" name="rsvp" class="radio mr-2" value="y" />
-										<span class="label-text"> Yes / ใช่ </span>
+										<input
+											type="radio"
+											name="rsvp"
+											class="radio mr-2"
+											value="y"
+											checked={data?.rsvp == 'y'}
+											required
+										/>
+										<span class="label-text"> Yes! I will be there / ใช่ ไว้เจอกัน! </span>
 									</label>
 								</div>
 								<!--
@@ -123,8 +132,14 @@
 								-->
 								<div>
 									<label class="label cursor-pointer justify-start">
-										<input type="radio" name="rsvp" class="radio mr-2" value="n" />
-										<span class="label-text"> No / ไม่ </span>
+										<input
+											type="radio"
+											name="rsvp"
+											class="radio mr-2"
+											value="n"
+											checked={data?.rsvp == 'n'}
+										/>
+										<span class="label-text"> Unfortunately no / ไม่สะดวกร่วมงาน </span>
 									</label>
 								</div>
 							</div>
@@ -156,10 +171,11 @@
 							</span>
 						</label>
 						<input
-							name="dietary"
+							name="restrictions"
 							type="text"
 							placeholder="Leave empty if you don't have any / ไม่ต้องกรอกหากไม่มีข้อจำกัด"
 							class="input input-bordered w-full"
+							value={data?.restrictions ? data?.restrictions : ''}
 						/>
 						<!--
 						<label class="label">
