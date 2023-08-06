@@ -45,7 +45,7 @@
 					class="link">(Google Maps)</a
 				>
 			</li>
-			<li>Event's theme and suggested dress code: Floral, pastel (casual)</li>
+			<li>Event's theme and suggested dress code: Pastel (casual)</li>
 		</ul>
 		<ul class="list-disc my-5 ml-5">
 			<li>วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 (ช่วงงานฉลองบนเวทีเริ่มต้น 18:30)</li>
@@ -55,7 +55,7 @@
 					class="link">(Google Maps)</a
 				>
 			</li>
-			<li>ธีมงาน และโทนสีที่แนะนำ: ดอกไม้และพาสเทล (ชุดลำลอง: casual)</li>
+			<li>ธีมงาน และโทนสีที่แนะนำ: โทนสีพาสเทล (ชุดลำลอง: casual)</li>
 		</ul>
 		<div class="alert">
 			<svg
