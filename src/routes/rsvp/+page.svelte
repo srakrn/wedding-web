@@ -76,8 +76,10 @@
 				/></svg
 			>
 			<span>
-				We sincerely apologise that the premise can occupy limited people.<br />
-				เราขออภัยเป็นอย่างยิ่งที่สถานที่จัดงานสามารถรองรับจำนวนคนได้จำกัด
+				On being accompanied: we sincerely apologise, however, the premise can occupy limited
+				people.
+				<br />
+				กรณีต้องการมีผู้ติดตาม: เราขออภัยเป็นอย่างยิ่ง แต่สถานที่จัดงานสามารถรองรับจำนวนคนได้จำกัด
 			</span>
 		</div>
 		<h1 class="font-display text-2xl tracking-wide my-5">
