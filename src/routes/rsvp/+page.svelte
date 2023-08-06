@@ -5,9 +5,10 @@
 
 <svelte:head>
 	<title>Fang & Tan wedding: You are Invited!</title>
+	<meta property="og:image" content="/og-thumb-rsvp.png" />
 </svelte:head>
 
-<div class="hero min-h-[50vh] mb-5" style="background-image: url(rs-bg.jpg);">
+<div class="hero min-h-[50vh] mb-5" style="background-image: url(/rs-bg.jpg);">
 	<div class="hero-overlay bg-primary bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full">
 		<img class="max-w-lg" src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
