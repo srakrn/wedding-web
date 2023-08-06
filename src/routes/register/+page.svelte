@@ -1,25 +1,33 @@
 <script>
 	export let data;
+	export let form;
 </script>
 
-<div class="hero min-h-[50vh] mb-10" style="background-image: url(rs-bg.jpg);">
+<div class="hero min-h-[50vh] mb-5" style="background-image: url(rs-bg.jpg);">
 	<div class="hero-overlay bg-primary bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full">
 		<img class="max-w-lg" src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
 		<div class="max-w-2xl">
 			<h1 class="mb-3 text-3xl">Witness out commitment</h1>
-			<h1 class="mb-5 text-xl">Tentatively 10 December 2023</h1>
+			<h1 class="mb-5 text-xl">10 December 2023</h1>
 		</div>
 	</div>
 </div>
 <div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
-		<p class="mb-3">
+		<div class="alert alert-success mb-5">
+			<span>
+				We have received your RSVP! If you need to amend the information, please feel free to
+				re-submit, thank you!<br />
+				เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
+			</span>
+		</div>
+		<p class="my-5 text-lg">
 			Hi-สวัสดีค่ะ-ครับ, <span class="font-bold">{data.friendly_name}</span>!
 		</p>
 		<p class="mb-3">
-			We--Ratchadaporn Pimrat (Fang) and Sirakorn Lamyai (Tan)--would like to cordially invite you
-			to our wedding party. Join us for a great meal, in a celebratory atmosphere.
+			We&mdash;Ratchadaporn Pimrat (Fang) and Sirakorn Lamyai (Tan)&mdash;would like to cordially
+			invite you to our wedding party. Join us for a great meal, in a celebratory atmosphere.
 		</p>
 		<p class="mb-3">
 			รัชดาภรณ์ พิมรัตน์ (ฟาง) และศิระกร ลำใย (แทน)
@@ -28,21 +36,46 @@
 		</p>
 		<h1 class="font-display text-2xl tracking-wide my-5">Information / ข้อมูลงาน</h1>
 		<ul class="list-disc my-5 ml-5">
-			<li>Date: Tentatively 10 December 2023 Evening</li>
+			<li>Date: 10 December 2023, 17:00 onwards (celebratory event starts at 18:30)</li>
 			<li>
-				Venue: Will be in Bangkok/Nonthaburi. We will try our best to find venue close to public
-				transportation options.
+				Venue: Jitprapassorn Restaurant, Chatuchak, Bangkok <a
+					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
+					class="link">(Google Maps)</a
+				>
 			</li>
-			<li>Suggested dress code: earth tone</li>
-			<li>Note: this will be a very casual party, without any formal/serious ceremonies.</li>
+			<li>Suggested dress code: Pastel and floral (casual)</li>
 		</ul>
 		<ul class="list-disc my-5 ml-5">
-			<li>วันที่: คาดว่า 10 ธันวาคม 2566 ช่วงเย็น</li>
-			<li>สถานที่: ในกรุงเทพหรือนนทบุรี เราจะพยายามหาสถานที่ที่เดินทางด้วยขนส่งมวลชนสะดวก</li>
-			<li>โทนสีเครื่องแต่งกายที่แนะนำ: เอิร์ธโทน</li>
-			<li>หมายเหตุ: ไม่มีงานพิธีจริงจัง เป็นงานปาร์ตี้และรับประทานอาหาร</li>
+			<li>วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 (ช่วงงานฉลองบนเวทีเริ่มต้น 18:30)</li>
+			<li>
+				สถานที่: บ้านจิตประภัสสร จตุจักร กรุงเทพฯ <a
+					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
+					class="link">(Google Maps)</a
+				>
+			</li>
+			<li>เดรสโค้ดที่แนะนำ: พาสเทลและดอกไม้ (ชุดลำลอง: casual)</li>
 		</ul>
-		<h1 class="font-display text-2xl tracking-wide my-5">Join us in our celebration</h1>
+		<div class="alert">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				class="stroke-current shrink-0 w-6 h-6"
+				><path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+				/></svg
+			>
+			<span>
+				We sincerely apologise that the premise can occupy limited people.<br />
+				เราขออภัยเป็นอย่างยิ่งที่สถานที่จัดงานสามารถรองรับจำนวนคนได้จำกัด
+			</span>
+		</div>
+		<h1 class="font-display text-2xl tracking-wide my-5">
+			Join us in our celebration / มาร่วมยินดีกับเรา
+		</h1>
 		<p class="mb-3">
 			We thrive to accomodate everyone joining to our best effort, and be green to our planet (by
 			reducing food and other materials waste). While we may not be able to accomodate all requests,
@@ -53,6 +86,13 @@
 			พร้อมกับช่วยรักษ์โลกด้วยการลดปริมาณอาหารและวัสดุสิ้นเปลือง
 			เราอาจจะไม่สามารถจัดทุกอย่างได้ตามรายละเอียดที่ระบุมา แต่จะพยายามเต็มที่ค่ะ-ครับ
 		</p>
+
+		{#if form?.error}
+			<div class="alert alert-warning my-5">
+				<span>{form.error}</span>
+			</div>
+		{/if}
+
 		<div class="card bg-base-200 shadow-xl">
 			<div class="card-body">
 				<form method="post">
@@ -62,18 +102,65 @@
 							<input name="invitation_code" class="input" value={data.invitation_code} />
 						</div>
 						<label class="label">
+							<span class="label-text text-lg">Will you be there? / คุณจะเข้าร่วมงานไหม</span>
+						</label>
+						<fieldset>
+							<!--If needed to add maybe, modify to `grid-cols-3`!-->
+							<div class="grid grid-cols-2 gap-4">
+								<div>
+									<label class="label cursor-pointer justify-start">
+										<input type="radio" name="rsvp" class="radio mr-2" value="y" />
+										<span class="label-text"> Yes / ใช่ </span>
+									</label>
+								</div>
+								<!--
+								<div>
+									<label class="label cursor-pointer justify-start">
+										<input type="radio" name="rsvp" class="radio mr-2" value="m" />
+										<span class="label-text"> Maybe / คาดว่า </span>
+									</label>
+								</div>
+								-->
+								<div>
+									<label class="label cursor-pointer justify-start">
+										<input type="radio" name="rsvp" class="radio mr-2" value="n" />
+										<span class="label-text"> No / ไม่ </span>
+									</label>
+								</div>
+							</div>
+						</fieldset>
+						<!--
+						<label class="label">
 							<span class="label-text"
 								>Number of people you planned to bring (including yourself)? / จำนวนคนที่ตั้งใจจะมา
 								(นับรวมตัวเอง)</span
 							>
 						</label>
-						<input name="n_guests" placeholder="Type here" class="input input-bordered w-full" />
+						<input
+							name="n_guests"
+							placeholder="Type here / กรอกตรงนี้"
+							class="input input-bordered w-full"
+							type="number"
+						/>
+						-->
 						<label class="label">
-							<span class="label-text"
-								>Any dietary restrictions or allergies? / ข้อจำกัดด้านการรับประทานอาหาร</span
-							>
+							<span class="label-text">
+								<span class="text-lg"
+									>Any dietary restrictions or allergies? / ข้อจำกัดด้านการรับประทานอาหาร<br
+									/></span
+								>
+								<span class="italic"
+									>Anything counts&mdash;from no spicy to presonal practices / ได้ทุกอย่าง
+									ตั้งแต่ไม่กินเผ็ด ถึงความเชื่อส่วนบุคคล</span
+								>
+							</span>
 						</label>
-						<input type="text" placeholder="Type here" class="input input-bordered w-full" />
+						<input
+							name="dietary"
+							type="text"
+							placeholder="Leave empty if you don't have any / ไม่ต้องกรอกหากไม่มีข้อจำกัด"
+							class="input input-bordered w-full"
+						/>
 						<!--
 						<label class="label">
 							<span class="label-text"
