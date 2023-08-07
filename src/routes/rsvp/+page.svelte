@@ -13,7 +13,7 @@
 	<div class="hero-content flex-col text-center text-base-100 w-full">
 		<img class="max-w-lg" src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
 		<div class="max-w-2xl">
-			<h1 class="mb-3 text-3xl">Witness out commitment</h1>
+			<h1 class="mb-3 text-3xl">Witness our commitment</h1>
 			<h1 class="mb-5 text-xl">10 December 2023</h1>
 		</div>
 	</div>
