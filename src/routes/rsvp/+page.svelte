@@ -43,7 +43,12 @@
 		</p>
 		<h1 class="font-display text-2xl tracking-wide my-5">Information / ข้อมูลงาน</h1>
 		<ul class="list-disc my-5 ml-5">
-			<li>Date: 10 December 2023, 17:00 onwards (celebratory event starts at 18:30)</li>
+			<li>
+				Date: 10 December 2023, 17:00 onwards, celebratory event starts at 18:30 <a
+					href="/rs-wedding-calendar.ics"
+					class="link">(+ Add to your calendar)</a
+				>
+			</li>
 			<li>
 				Venue: Jitprapassorn Restaurant, Chatuchak, Bangkok <a
 					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
@@ -53,7 +58,12 @@
 			<li>Event's theme and suggested dress code: Pastel (casual)</li>
 		</ul>
 		<ul class="list-disc my-5 ml-5">
-			<li>วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 (ช่วงงานฉลองบนเวทีเริ่มต้น 18:30)</li>
+			<li>
+				วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 โดยช่วงงานฉลองบนเวทีเริ่มต้น 18:30 <a
+					href="/rs-wedding-calendar.ics"
+					class="link">(+ เพิ่มไปยังปฏิทิน)</a
+				>
+			</li>
 			<li>
 				สถานที่: บ้านจิตประภัสสร จตุจักร กรุงเทพฯ <a
 					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
