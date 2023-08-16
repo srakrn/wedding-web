@@ -1,4 +1,7 @@
 <script>
+	import { fly } from 'svelte/transition';
+	import { enhance } from '$app/forms';
+
 	export let data;
 	export let form;
 </script>
@@ -20,15 +23,6 @@
 </div>
 <div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
-		{#if form?.success}
-			<div class="alert alert-success mb-3">
-				<span>
-					We have received your RSVP! If you need to amend the information, please feel free to
-					re-submit, thank you!<br />
-					เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
-				</span>
-			</div>
-		{/if}
 		<p class="mt-5 mb-3 text-xl">
 			Hi-สวัสดีค่ะ-ครับ, <span class="font-bold">{data.friendly_name}</span>!
 		</p>
@@ -107,14 +101,24 @@
 		</p>
 
 		{#if form?.error}
-			<div class="alert alert-warning my-5">
+			<div class="alert alert-warning my-5" in:fly={{ y: 20 }}>
 				<span>{form.error}</span>
+			</div>
+		{/if}
+
+		{#if form?.success}
+			<div class="alert alert-success mb-3" in:fly={{ y: 20 }}>
+				<span>
+					We have received your RSVP! If you need to amend the information, please feel free to
+					re-submit, thank you!<br />
+					เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
+				</span>
 			</div>
 		{/if}
 
 		<div class="card bg-base-200 shadow-xl mb-10">
 			<div class="card-body">
-				<form method="post">
+				<form method="post" use:enhance>
 					<div class="form-control mb-10">
 						<div style="display: none">
 							<input name="screen_name" class="input" value={data.screen_name} />
