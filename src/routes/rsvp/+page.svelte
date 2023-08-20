@@ -8,13 +8,13 @@
 
 <svelte:head>
 	<title>Fang & Tan wedding: You are Invited!</title>
-	<meta property="og:image" content="/og-thumb-rsvp.png" />
+	<meta property="og:image" content="/imgs/og/og-thumb-rsvp.png" />
 </svelte:head>
 
-<div class="hero min-h-[20vh] mb-3" style="background-image: url(/rs-bg.jpg);">
+<div class="hero min-h-[20vh] mb-3" style="background-image: url(/imgs/bg/rs-bg.jpg);">
 	<div class="hero-overlay bg-primary bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full my-10">
-		<img class="max-w-lg" src="rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
+		<img class="max-w-lg" src="cis/rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
 		<div class="max-w-2xl">
 			<h1 class="mb-1 text-2xl">Witness our commitment</h1>
 			<h1 class="mb-mb-3 text-2xl">10 December 2023</h1>
