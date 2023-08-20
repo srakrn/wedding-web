@@ -5,6 +5,8 @@
 	export let data;
 	export let form;
 	import { background_image_name } from '../../helpers/background';
+
+	let submitting = false;
 </script>
 
 <svelte:head>
@@ -122,7 +124,17 @@
 
 		<div class="card bg-base-200 shadow-xl mb-10">
 			<div class="card-body">
-				<form method="post" use:enhance>
+				<form
+					method="post"
+					use:enhance={() => {
+						submitting = true;
+
+						return async ({ update }) => {
+							await update({ reset: false });
+							submitting = false;
+						};
+					}}
+				>
 					<div class="form-control mb-10">
 						<div style="display: none">
 							<input name="screen_name" class="input" value={data.screen_name} />
@@ -268,7 +280,10 @@
 						</fieldset>
 						-->
 					</div>
-					<input type="submit" class="btn btn-primary" value="Submit / ส่ง" />
+					<input type="submit" disabled={submitting} class="btn btn-primary" value="Submit / ส่ง" />
+					<span class="ml-2" style={!submitting ? 'display: none' : ''}
+						>Submitting... / กำลังส่ง...</span
+					>
 				</form>
 			</div>
 		</div>
