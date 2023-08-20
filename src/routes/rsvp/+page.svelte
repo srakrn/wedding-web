@@ -4,7 +4,7 @@
 
 	export let data;
 	export let form;
-	import { background_image_name } from '../../helpers/background';
+	import { background_image_name } from '$lib/helpers/background';
 
 	let submitting = false;
 </script>

@@ -1,5 +1,5 @@
 <script>
-	import { background_image_name } from '../helpers/background';
+	import { background_image_name } from '$lib/helpers/background';
 </script>
 
 <div class="hero h-screen" style="background-image: url(/imgs/bg/{background_image_name});">
