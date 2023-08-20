@@ -4,6 +4,7 @@
 
 	export let data;
 	export let form;
+	import { background_image_name } from '../../helpers/background';
 </script>
 
 <svelte:head>
@@ -11,8 +12,11 @@
 	<meta property="og:image" content="/imgs/og/og-thumb-rsvp.png" />
 </svelte:head>
 
-<div class="hero min-h-[20vh] mb-3" style="background-image: url(/imgs/bg/rs-bg.jpg);">
-	<div class="hero-overlay bg-primary bg-opacity-80" />
+<div
+	class="hero min-h-[20vh] mb-3"
+	style="background-image: url(/imgs/bg/{background_image_name});"
+>
+	<div class="hero-overlay bg-zinc-700 bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full my-10">
 		<img class="max-w-lg" src="cis/rs-text-white.svg" alt="Ratchadaporn & Sirakorn" />
 		<div class="max-w-2xl">
