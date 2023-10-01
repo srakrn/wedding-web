@@ -4,7 +4,6 @@
 
 	export let data;
 	export let form;
-	import { background_image_name } from '$lib/helpers/background';
 
 	let submitting = false;
 </script>
@@ -16,7 +15,7 @@
 
 <div
 	class="hero min-h-[20vh] mb-3"
-	style="background-image: url(/imgs/bg/{background_image_name});"
+	style="background-image: url(/imgs/bg/{data.background_image_name});"
 >
 	<div class="hero-overlay bg-zinc-700 bg-opacity-80" />
 	<div class="hero-content flex-col text-center text-base-100 w-full my-10">

@@ -1,5 +1,6 @@
 import { error, fail } from '@sveltejs/kit';
 import { supabase } from '$lib/supabaseClient';
+import { background_image_name } from '$lib/helpers/background.server';
 
 export async function load({ params, url, route }) {
     const screenName = url.searchParams.get('screen_name');
@@ -30,7 +31,8 @@ export async function load({ params, url, route }) {
         friendly_name: guest.friendly_name,
         invitation_code: guest.invitation_code,
         rsvp: guestRsvp?.rsvp,
-        restrictions: guestRsvp?.restrictions
+        restrictions: guestRsvp?.restrictions,
+        background_image_name: background_image_name
     }
 }
 
