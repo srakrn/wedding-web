@@ -29,33 +29,18 @@
 <div class="flex justify-center p-3">
 	<div class="basis-full max-w-4xl">
 		<p class="mt-5 mb-3 text-xl">
-			Hi-สวัสดีค่ะ-ครับ, <span class="font-bold">{data.friendly_name}</span>!
-		</p>
-		<p class="mb-3">
-			We&mdash;Ratchadaporn Pimrat (Fang) and Sirakorn Lamyai (Tan)&mdash;would like to cordially
-			invite you to our wedding party. Join us for a great meal, in a celebratory atmosphere.
+			สวัสดีค่ะ-ครับ/Hi, <span class="font-bold">{data.friendly_name}</span>!
 		</p>
 		<p class="mb-3">
 			รัชดาภรณ์ พิมรัตน์ (ฟาง) และศิระกร ลำใย (แทน)
 			มีความยินดีเป็นอย่างยิ่งที่จะเชิญเข้าร่วมงานปาร์ตี้แต่งงานของเรา
 			มารับประทานอาหารพร้อมร่วมยินดีให้กับพวกเรากันนะคะ-ครับ
 		</p>
+		<p class="mb-3">
+			We&mdash;Ratchadaporn Pimrat (Fang) and Sirakorn Lamyai (Tan)&mdash;would like to cordially
+			invite you to our wedding party. Join us for a great meal, in a celebratory atmosphere.
+		</p>
 		<h1 class="font-display text-2xl tracking-wide my-5">Information / ข้อมูลงาน</h1>
-		<ul class="list-disc my-5 ml-5">
-			<li>
-				Date: 10 December 2023, 17:00 onwards, celebratory event starts at 18:30 <a
-					href="/rs-wedding-calendar.ics"
-					class="link">(+ Add to your calendar)</a
-				>
-			</li>
-			<li>
-				Venue: Jitprapassorn Restaurant, Chatuchak, Bangkok <a
-					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
-					class="link">(Google Maps)</a
-				>
-			</li>
-			<li>Event's theme and suggested dress code: Pastel (casual)</li>
-		</ul>
 		<ul class="list-disc my-5 ml-5">
 			<li>
 				วันที่: 10 ธันวาคม 2566 ตั้งแต่ 17:00 โดยช่วงงานฉลองบนเวทีเริ่มต้น 18:30 <a
@@ -71,6 +56,21 @@
 			</li>
 			<li>ธีมงาน และโทนสีที่แนะนำ: โทนสีพาสเทล (ชุดลำลอง: casual)</li>
 		</ul>
+		<ul class="list-disc my-5 ml-5">
+			<li>
+				Date: 10 December 2023, 17:00 onwards, celebratory event starts at 18:30 <a
+					href="/rs-wedding-calendar.ics"
+					class="link">(+ Add to your calendar)</a
+				>
+			</li>
+			<li>
+				Venue: Jitprapassorn Restaurant, Chatuchak, Bangkok <a
+					href="https://goo.gl/maps/fB2YG5EbXrXzuVzC8"
+					class="link">(Google Maps)</a
+				>
+			</li>
+			<li>Event's theme and suggested dress code: Pastel (casual)</li>
+		</ul>
 		<div class="alert">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -85,24 +85,23 @@
 				/></svg
 			>
 			<span>
-				On being accompanied: we sincerely apologise, however, the premise can occupy limited
-				people.
-				<br />
 				กรณีต้องการมีผู้ติดตาม: เราขออภัยเป็นอย่างยิ่ง แต่สถานที่จัดงานสามารถรองรับจำนวนคนได้จำกัด
+				<br />
+				On being accompanied: we sincerely apologise, however, the premise can occupy limited people.
 			</span>
 		</div>
 		<h1 class="font-display text-2xl tracking-wide my-5">
-			Join us in our celebration / มาร่วมยินดีกับเรา
+			มาร่วมยินดีกับเรา / Join us in our celebration
 		</h1>
-		<p class="mb-3">
-			We thrive to accomodate everyone joining to our best effort, and be green to our planet (by
-			reducing food and other materials waste). While we may not be able to accomodate all requests,
-			we will try our best.
-		</p>
 		<p class="mb-3">
 			เรามีความตั้งใจจะดูแลทุกคนที่มางานของเราให้ดีที่สุด
 			พร้อมกับช่วยรักษ์โลกด้วยการลดปริมาณอาหารและวัสดุสิ้นเปลือง
 			เราอาจจะไม่สามารถจัดทุกอย่างได้ตามรายละเอียดที่ระบุมา แต่จะพยายามเต็มที่ค่ะ-ครับ
+		</p>
+		<p class="mb-3">
+			We thrive to accomodate everyone joining to our best effort, and be green to our planet (by
+			reducing food and other materials waste). While we may not be able to accomodate all requests,
+			we will try our best.
 		</p>
 
 		{#if form?.error}
@@ -114,9 +113,10 @@
 		{#if form?.success}
 			<div class="alert alert-success mb-3" in:fly={{ y: 20 }}>
 				<span>
-					We have received your RSVP! If you need to amend the information, please feel free to
-					re-submit, thank you!<br />
-					เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ
+					เราได้รับคำตอบของคุณแล้ว! หากต้องการเปลี่ยนแปลงคำตอบ สามารถส่งฟอร์มใหม่ได้ ขอบคุณค่ะ-ครับ<br
+					/>
+					We have received your RSVP! If you need to amend the information, please feel free to re-submit,
+					thank you!
 				</span>
 			</div>
 		{/if}
@@ -140,7 +140,7 @@
 							<input name="invitation_code" class="input" value={data.invitation_code} />
 						</div>
 						<label class="label">
-							<span class="label-text text-lg">Will you be there? / คุณจะเข้าร่วมงานไหม</span>
+							<span class="label-text text-lg">คุณจะเข้าร่วมงานไหม / Will you be there? </span>
 						</label>
 						<fieldset>
 							<!--If needed to add maybe, modify to `grid-cols-3`!-->
@@ -155,7 +155,7 @@
 											checked={data?.rsvp == 'y'}
 											required
 										/>
-										<span class="label-text"> Yes! I will be there / ใช่ ไว้เจอกัน! </span>
+										<span class="label-text">ใช่ ไว้เจอกัน! / Yes, see you!</span>
 									</label>
 								</div>
 								<!--
@@ -175,7 +175,7 @@
 											value="n"
 											checked={data?.rsvp == 'n'}
 										/>
-										<span class="label-text"> Unfortunately no / ไม่สะดวกร่วมงาน </span>
+										<span class="label-text">ไม่สะดวกร่วมงาน/Unfortunately no</span>
 									</label>
 								</div>
 							</div>
@@ -197,19 +197,19 @@
 						<label class="label">
 							<span class="label-text">
 								<span class="text-lg"
-									>Any dietary restrictions or allergies? / ข้อจำกัดด้านการรับประทานอาหาร<br
+									>ข้อจำกัดด้านการรับประทานอาหาร / Any dietary restrictions or allergies? <br
 									/></span
 								>
 								<span class="italic"
-									>Anything counts&mdash;from no spicy to presonal practices / ได้ทุกอย่าง
-									ตั้งแต่ไม่กินเผ็ด ถึงความเชื่อส่วนบุคคล</span
+									>ได้ทุกอย่าง ตั้งแต่ไม่กินเผ็ด ถึงความเชื่อส่วนบุคคล / Anything counts&mdash;from
+									no spicy to presonal practices</span
 								>
 							</span>
 						</label>
 						<input
 							name="restrictions"
 							type="text"
-							placeholder="Leave empty if you don't have any / ไม่ต้องกรอกหากไม่มีข้อจำกัด"
+							placeholder="ไม่ต้องกรอกหากไม่มี / Leave empty if no restrictions"
 							class="input input-bordered w-full"
 							value={data?.restrictions ? data?.restrictions : ''}
 						/>
@@ -279,9 +279,9 @@
 						</fieldset>
 						-->
 					</div>
-					<input type="submit" disabled={submitting} class="btn btn-primary" value="Submit / ส่ง" />
+					<input type="submit" disabled={submitting} class="btn btn-primary" value="ส่ง / Submit" />
 					<span class="ml-2" style={!submitting ? 'display: none' : ''}
-						>Submitting... / กำลังส่ง...</span
+						>กำลังส่ง... / Submitting...</span
 					>
 				</form>
 			</div>
